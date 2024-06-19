@@ -1,0 +1,73 @@
+.impressum-section {
+    min-width: 30%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.impressum-section h1 {
+    font-size: 24px;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+}
+.impressum-section h2 {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.impressum-section a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.impressum-section a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.impressum-section th {
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+footer  {
+    position: static;
+}
+
+@media (max-width: 580px) {
+    .impressum-section tr {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+    }
+}
+
+
+/*
+  Quellnachweise später:
+  -div 
+.impressum-footer * {
+    flex-direction: row;
+}   
+.impressum-footer  {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    background-color: blue;
+}   
+
+.impressum-footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+.impressum-footer a:hover {
+    color: orange;
+}
+*/

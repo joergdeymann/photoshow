@@ -1,0 +1,151 @@
+.animateResizeReverse {
+    /* animation: 3s opacity ease-in-out; */
+    animation-duration: 400ms;
+    animation-name: animateResizeReverse;    
+    animation-timing-function: ease-in-out;
+}
+
+.animateResize {
+    /* animation: 3s opacity ease-in-out; */
+    animation-duration: 400ms;
+    animation-name: animateResize;    
+    animation-timing-function: ease-in-out;
+}
+
+.animateOpacityReverse {
+    animation-duration: 400ms;
+    animation-name: animateOpacityReverse;    
+    animation-timing-function: ease-in-out;
+}
+
+.animateOpacity {
+    /* animation: 3s opacity ease-in-out; */
+    animation-duration: 400ms;
+    animation-name: animateOpacity;    
+    animation-timing-function: ease-in-out;
+}
+
+
+.slideCenter2Left {
+    animation-duration: 400ms;
+    animation-name: slideCenter2Left;
+    animation-timing-function:ease-in-out;    
+}
+.slideCenter2Right {
+    animation-duration: 400ms;
+    animation-name: slideCenter2Right;
+    animation-timing-function:ease-in-out;    
+}
+.slideRight2Center {
+    animation-duration: 400ms;
+    animation-name: slideRight2Center;
+    animation-timing-function:ease-in-out;    
+}
+.slideLeft2Center {
+    animation-duration: 400ms;
+    animation-name: slideLeft2Center;
+    animation-timing-function:ease-in-out;    
+}
+
+
+
+/*
+    Open and Close Big Image
+*/
+
+@keyframes animateResize {
+    from {
+        border-radius: 50%;
+        scale: 40%;
+    }
+  
+    to {
+        border-radius: 0%;
+        scale: 100%;
+    }
+}
+
+@keyframes animateOpacity {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animateResizeReverse {
+    from {
+        border-radius: 0%;
+        scale: 100%;
+    }
+  
+    to {
+        border-radius: 50%;
+        scale: 40%;
+    }
+}
+
+@keyframes animateOpacityReverse {
+    from {
+        opacity: 1;
+    }
+  
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+/*
+    Move Big Picture
+*/
+@keyframes slideRight2Center {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+}
+@keyframes slideCenter2Left {
+    from {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+  
+    to {
+        translate: -150vw 0;
+        scale: 200% 1;
+    }
+}
+@keyframes slideCenter2Right {
+    from {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+  
+    to {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+}
+@keyframes slideLeft2Center {
+    from {
+        translate: -150vw 0;
+        scale: 200% 1;
+    }
+    
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}

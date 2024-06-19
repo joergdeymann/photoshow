@@ -1,0 +1,53 @@
+.overlay-container {
+    z-index:1;
+
+    
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,01);
+    transition: all 200ms ease-in-out;
+    overflow: hidden;
+
+}
+
+#overlay-content {
+    display: flex;
+    flex-direction:row;
+    gap: 16px; 
+}
+
+.big-image {
+    max-width: 80vw;
+    max-height: 80vh;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+
+    box-shadow: 
+    10px 10px 40px rgba(255,255,255,0.2),
+    -10px -10px 40px rgba(255,255,255,0.2),
+    -10px 10px 40px rgba(255,255,255,0.2),
+    10px -10px 40px rgba(255,255,255,0.2);
+    
+    border-radius: 10px;
+
+ 
+}
+
+.arrow {
+    width: 30px;
+    height: 100%;
+}
+
+.arrow:hover {
+    filter: brightness(1.3);
+}
+
+.arrow,button,a,.small-img {
+    cursor:pointer;
+}
+

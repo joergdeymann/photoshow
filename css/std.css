@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0
+    
+}
+
+.hide {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+}
+
+.flex-row {
+    display:flex;
+    flex-direction: row;
+}
+
+.gap32 {
+    gap: 32px;
+}
+
+.togray {
+    filter:grayscale(1);
+}
+.rot180 {
+    rotate: 180deg;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
