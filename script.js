@@ -38,7 +38,6 @@ function showBigImage(i) {
     imageId = i;
     document.getElementById('big-image').src=`${images[i]}`;
     document.getElementById('overlay-container').classList.remove('invisible');
-    //# document.getElementById('content').classList.add('hide');
 }
 
 function showBigImageAnimate(i) {
@@ -51,7 +50,6 @@ function showBigImageAnimate(i) {
 function closeImg(e) {
     animateResizeReverse();
     document.getElementById("overlay-container").classList.add("invisible");
-    //## document.getElementById("content").classList.remove("hide");
 
     if (e) {
        e.stopPropagation();

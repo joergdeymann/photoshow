@@ -4,11 +4,13 @@ function animateResize() {
     setTimeout(function () {
         document.getElementById("overlay-container").classList.remove("animateOpacity");
         document.getElementById("big-image").classList.remove("animateResize");
+        document.getElementById('content').classList.add('hide'); 
     },400);
 }
 
 
 function animateResizeReverse() {
+    document.getElementById('content').classList.remove('hide'); 
     document.getElementById("overlay-container").classList.add("animateOpacityReverse");
     document.getElementById("big-image").classList.add("animateResizeReverse");
     setTimeout(function () {
@@ -68,9 +70,6 @@ function showPrevImage() {
         setTimeout(function () {
             document.getElementById("big-image").classList.remove("slideLeft2Center");
         },300);0
-    
-
-
 
     },300);
 }

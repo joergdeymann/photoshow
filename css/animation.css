@@ -48,7 +48,6 @@
 }
 
 
-
 /*
     Open and Close Big Image
 */
@@ -148,8 +147,4 @@
         translate: 0 0;
         scale: 100% 1;
     }
-}
-
-@keyframes hideLater {
-    
 }
