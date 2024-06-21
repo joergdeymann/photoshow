@@ -38,7 +38,7 @@ function showBigImage(i) {
     imageId = i;
     document.getElementById('big-image').src=`${images[i]}`;
     document.getElementById('overlay-container').classList.remove('invisible');
-    //## document.getElementById('content').classList.add('hide');
+    //# document.getElementById('content').classList.add('hide');
 }
 
 function showBigImageAnimate(i) {

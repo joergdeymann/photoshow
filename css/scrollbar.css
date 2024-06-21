@@ -1,0 +1,31 @@
+/* dark */
+  
+body {
+    --sb-track-color: rgba(0,0,0,0.5);
+    --sb-thumb-color2: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+    --sb-thumb-color: linear-gradient(rgb(134, 239, 172), rgb(100, 240, 40), rgb(134, 239, 172));
+    --sb-size: 8px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 5px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 5px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+  
