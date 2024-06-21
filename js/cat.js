@@ -13,7 +13,6 @@ function toggleFilter(id="harry") {
 
 
 function toggleCat(id) {
-    // 0 = Harry, 1= Molly
     let cat=-1;
     if (id=="harry") {
         cat=0;
@@ -21,14 +20,11 @@ function toggleCat(id) {
     if (id=="molly") {
         cat=1;
     } 
-    // console.log(id+cat);
 
     let catid=[1,1,1,0,2,1,1,1,1,2,1,1,0,0,1,1,0,1,0,0,0,0,1,1,1,1,2,0,2,2,2,1,1,1,0,0,0,0,0,0,1,0,1,1,0,1,0,1,2,0,0,1,1,0,0,1,1,1,0,1,2,1,1];
     for (let i=0;i<catid.length;i++) {
         if (cat == catid[i]) {
-            console.log(i);
             document.getElementById(`cat${i}`).classList.toggle("hide");
         }
     }
-
 }

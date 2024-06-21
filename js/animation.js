@@ -14,7 +14,6 @@ function animateResizeReverse() {
     setTimeout(function () {
         document.getElementById("overlay-container").classList.remove("animateOpacityReverse");
         document.getElementById("big-image").classList.remove("animateResizeReverse");
-        console.log("animateResizeReverse: after Timeout");
     },400);
 }
 
